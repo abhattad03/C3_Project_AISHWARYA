@@ -43,6 +43,11 @@ class RestaurantTest {
         assertFalse(result);
 
     }
+    @Test
+    public void calculateOrderTotal_should_return_400_after_adding_the_350_and_50(){
+        Integer orderTotal = restaurant.calculateOrderTotal(350,50);
+        assertEquals(400,restaurant.calculateOrderTotal());
+    }
 
     //<<<<<<<<<<<<<<<<<<<<<<<<<OPEN/CLOSED>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
